@@ -54,6 +54,31 @@ section {
 }
 
 
+#footer {
+  background-color: rgb(105, 98, 202);
+  margin-top: -10px;
+}
+
+#footer .contenedor-icons {
+  padding: 10px 5px;
+  text-align: center;
+}
+
+#footer .contenedor-icons a {
+  font-size: 33px;
+  color: white;
+  text-decoration: none;
+  margin: 2px 7px;
+}
+
+#footer .contenedor-icons a:hover {
+  color: rgb(189, 188, 188);
+}
+
+
+
+
+
 @media screen and (min-width:800px) {
 
     #web .contenedor {
