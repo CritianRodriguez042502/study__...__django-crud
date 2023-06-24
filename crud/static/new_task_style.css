@@ -1,0 +1,125 @@
+/* Estilos generales */
+
+* {
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+body {
+    margin: 0px;
+    background: rgb(194, 193, 209);
+}
+
+h1 {font-size: 28px;}
+h2 {font-size: 21px;}
+h3 {font-size: 19px;}
+p {font-size: 15px;}
+
+
+#new-task .contenedor {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Item_1*/
+
+#new-task .contenedor .item_1 {
+    background: linear-gradient(rgb(92, 92, 167), rgb(28, 28, 119));
+    text-align: center;
+    padding: 22px 10px;
+}
+
+
+#new-task .contenedor .item_1 h1 {
+    margin: 0px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+#new-task .contenedor .item_1 .item-img img {
+    width: 80%;
+}
+
+#new-task .contenedor .item_1 a {
+    text-decoration: none;
+    color: white;
+    font-size: 27px;
+    text-decoration: underline;
+}
+
+#new-task .contenedor .item_1 a:hover {
+    text-shadow: 2px 1px 30px white,2px 1px 30px white;
+}
+
+
+/* item_2 */
+
+#new-task .contenedor .item_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 10px;
+}
+
+
+#new-task .contenedor .item_2 h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(105, 98, 202);
+    text-align: center;
+}
+
+
+#new-task .contenedor .item_2 .contenedor-input {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#new-task .contenedor .item_2 .contenedor-input label {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#new-task .contenedor .item_2 .contenedor-input input {
+   padding-top: 8px;
+   padding-bottom: 8px;
+   padding-right: 20px;
+   padding-left: 10px;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+
+#new-task .contenedor .item_2 .contenedor-input textarea {
+    padding-right: 15px;
+    font-size: 22px;
+}
+
+
+#new-task .contenedor .item_2 .contenedor-boton {
+    display: flex;
+    justify-content:center;
+    margin: 13px 10px;
+}
+
+#new-task .contenedor .item_2 .contenedor-boton button {
+    font-size: 30px;
+    background:rgb(105, 98, 202);
+    color: white;
+    padding: 9px 85px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+}
+
+
+#new-task .contenedor .item_2 .contenedor-boton button:hover {
+    background-color:rgb(61, 57, 124) ;
+    font-weight: bold;
+}

@@ -1,0 +1,147 @@
+#signin .contenedor {
+    padding: 50px 10px;
+    display: flex;
+    margin: -1px;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(194, 193, 209);
+}
+
+
+#signin .contenedor h1 {
+    font-size: 45px;
+    font-weight: bold;
+    color: rgb(105, 98, 202);
+    text-align: center;
+}
+
+
+#signin .contenedor .respuesta {
+    color: rgb(158, 40, 40);
+    font-size: 23px;
+    text-decoration: underline;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0.7;
+}
+
+
+
+#signin .contenedor .item-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#signin .contenedor .item-form label {
+    font-weight: bold;
+    margin-top: 8px;
+    font-size: 20px;
+}
+
+
+#signin .contenedor .item-form input {
+    border-radius: 6px;
+    font-size: 20px;
+    padding-right: 15px;
+    padding-top: 7px;
+    padding-bottom: 2px;
+    border: none;
+    transition: all .4s;
+}
+
+
+#signin .contenedor .item-form input:hover {
+    box-shadow: 2px 1px 20px gray;
+}
+
+
+#signin .contenedor .item-form input:focus {
+    box-shadow: 2px 1px 20px rgb(187, 187, 187),2px 1px 20px rgb(189, 189, 189);
+    padding-right: 42px;
+    padding-top: 10px;
+    padding-bottom: 6px;
+}
+
+
+#signin .contenedor form .contenedor-boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#signin .contenedor form button {
+    font-size: 20px;
+    background:rgb(105, 98, 202);
+    color: white;
+    padding: 9px 95px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+}
+
+
+#signin .contenedor form button:hover {
+    background-color:rgb(61, 57, 124) ;
+    font-weight: bold;
+}
+
+
+#signin .contenedor .img-1 {
+    display: none;
+}
+
+
+#signin .contenedor .img-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#signin .contenedor .img-2 img {
+    width: 70%;
+    height: auto;
+}
+
+
+@media screen and (min-width:800px) {
+
+    #signin .contenedor {
+        padding-top: 100px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    #signin .contenedor .img-2 {
+        justify-content: start;
+        align-items: center;
+    }
+
+
+    #signin .contenedor .img-2 img {
+        width: 50%;
+        height: auto;
+        position: relative;
+        top: 40px;
+    }
+
+
+    #signin .contenedor .img-1 {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+
+    #signin .contenedor .img-1 img {
+        width: 50%;
+        height: auto;
+        position: relative;
+        top: 40px;
+    }
+}

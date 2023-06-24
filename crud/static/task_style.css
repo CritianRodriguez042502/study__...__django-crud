@@ -1,0 +1,92 @@
+body {
+    background: rgb(194, 193, 209);
+  }
+
+
+  #tasks {
+    margin-top: 35px;
+  }
+
+
+  #tasks .contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  #tasks .contenedor .carta {
+    background: white;
+    width: 100%;
+    height: auto;
+  }
+
+  #tasks .contenedor .carta h1 {
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    background: rgb(218, 211, 211);
+    padding: 13px 5px;
+    color: rgb(58, 54, 109);
+  }
+
+
+  #tasks .contenedor .carta h5 {
+    text-align: center;
+    color: rgb(105, 98, 202);
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  #tasks .contenedor .carta p {
+    text-align: center;
+    font-size: 20px;
+  }  
+
+    
+  #tasks .contenedor .carta .contenedor-boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  #tasks .contenedor .carta .contenedor-boton button {
+    padding: 5px 20px;
+  }
+
+
+  #tasks .contenedor .carta .contenedor-boton button {
+    font-size: 20px;
+    background:rgb(105, 98, 202);
+    color: white;
+    padding: 9px 60px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+#tasks .contenedor .carta .contenedor-boton button:hover {
+    background-color:rgb(61, 57, 124) ;
+}
+
+
+#tasks .contenedor .carta span {
+  text-decoration: underline;
+  display: block;
+  font-size: 19px;
+  text-align: end;
+  margin-right: 30px;
+  margin-bottom: 5px;
+}
+
+
+@media screen and (min-width:800px) {
+
+  #tasks .contenedor .carta {
+    width: 70%;
+  }
+
+}

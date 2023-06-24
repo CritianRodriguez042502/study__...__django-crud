@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% load static %}
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="{% static 'new_task_style.css'%}">
+
+    <title> NEW_TASK </title>
+
+</head>
+
+
+<body>
+
+    <section id="new-task">
+        <div class="contenedor">
+
+
+            <div class="item_1">
+
+                {% for usuario in user %}
+                <h1> 👋 {{usuario}} 👋  </h1>
+                {% endfor %}
+
+    
+                <h1>
+                    <a href="/task/"> / Tareas registradas / </a>
+                </h1>
+
+            </div>
+
+
+            <div class="item_2">
+                <h1> Tarea Nueva </h1>
+
+                <form action="/new_task/" method="POST">
+
+                    {{resultado}}
+
+                    <div class="contenedor-input">
+                        <label for="id_title">Titulo:</label>
+                        <input type="text" name="title" maxlength="18" required id="id_title">
+                    </div>
+                
+                    <div class="contenedor-input">
+                        <label   for="id_description">Descripcion:</label>
+                        <textarea name="description" cols="30" rows="4" maxlength="30" id="id_description"></textarea>
+                    </div>
+                
+                    {% csrf_token %}
+
+                    <div class="contenedor-boton">
+                        <button> Keep </button>
+                    </div>
+
+                </form>
+
+            </div>
+    
+        </div>
+    </section>
+    
+</body>
+</html>

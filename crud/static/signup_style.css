@@ -1,0 +1,118 @@
+#signup .contenedor {
+    background: rgb(194, 193, 209);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 10px;
+}
+
+
+#signup .contenedor h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(105, 98, 202);
+    text-align: center;
+}
+
+
+#signup .contenedor .respuesta {
+    color: rgb(158, 40, 40);
+    font-size: 23px;
+    text-decoration: underline;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0.7;
+}
+
+
+#signup .contenedor .contenedor-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 1px;
+}
+
+
+#signup .contenedor .contenedor-form label {
+    font-weight: bold;
+    margin-top: 8px;
+    font-size: 20px;
+}
+
+
+#signup .contenedor .contenedor-form input {
+    font-size: 20px;
+    border-radius: 6px;
+    padding-right: 40px;
+    padding-top: 7px;
+    padding-bottom: 2px;
+    border: none;
+    transition: all .2s;
+}
+
+
+#signup .contenedor .contenedor-form input:hover {
+    box-shadow: 2px 1px 20px gray;
+}
+
+
+#signup .contenedor .contenedor-form input:focus {
+    box-shadow: 2px 1px 20px rgb(187, 187, 187),2px 1px 20px rgb(189, 189, 189);
+    padding-right: 42px;
+    padding-top: 10px;
+    padding-bottom: 6px;
+}
+
+
+#signup .contenedor .contenedor-boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#signup .contenedor .contenedor-boton button {
+    font-size: 20px;
+    background:rgb(105, 98, 202);
+    color: white;
+    padding: 9px 105px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+}
+
+
+#signup .contenedor .contenedor-boton button:hover {
+    background-color:rgb(61, 57, 124) ;
+    font-weight: bold;
+}
+
+
+#signup .contenedor .item-img {
+    display: none;
+}
+
+
+@media screen and (min-width:800px) {
+
+    #signup .contenedor {
+        justify-content: space-evenly;
+        padding-left: 70px;
+    }
+
+    #signup .contenedor .item-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+
+    #signup .contenedor .item-img img {
+        width: 65%;
+        position: relative;
+        top: 40px;
+    }
+
+
+}

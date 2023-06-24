@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+body {
+    margin: 0px;
+    background: rgb(194, 193, 209);
+    
+}
+
+h1 {font-size: 28px;}
+h2 {font-size: 21px;}
+h3 {font-size: 19px;}
+p {font-size: 15px;}
+
+
+header .contenedor {
+    background: linear-gradient(rgb(92, 92, 167), rgb(28, 28, 119));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+header .contenedor h1 {
+    white-space: nowrap;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 1px 18px white;
+    padding: 2px 1px;
+}
+
+
+header .contenedor nav {
+    display: flex;
+    flex-direction: column;
+    padding: 4px 0px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+
+header .contenedor a {
+    white-space: nowrap;
+    color: white;
+    font-family: bold;
+    text-decoration: none;
+    text-align: center;
+    font-size: 21px;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+header .contenedor a:hover {
+    color: rgb(193, 193, 209);
+}
+
+
+@media screen and (min-width:900px) {
+
+    header .contenedor {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .contenedor nav {
+        flex-direction: row;
+    }
+
+    header .contenedor .item {
+        padding: 5px 40px;
+    }
+
+    header .contenedor .item a {
+        font-size: 22px;
+        margin: 10px 23px;
+    }
+
+}

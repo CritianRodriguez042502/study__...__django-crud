@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sigin </title>
+</head>
+
+<body>
+    
+    {% extends 'navegacion.html' %}
+
+    {% block content %}
+
+    <!-- En este caso toco poner el link de style.css y el normalize por debajo del extends -->
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'sigin_style.css'%}">
+
+
+    <section id="signin">
+
+        <div class="contenedor">
+
+            <div class="item img-1">
+                <img class="imagen"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/800px-User_icon_2.svg.png" alt="Img">
+            </div>
+
+            <div class="item">
+                
+                <div class="contenedor-form">
+                    <h1> Ingresar </h1>
+                </div>
+                
+                <div class="contenedor-form">
+                    <p class="respuesta"> {{respuesta}} </p> 
+                </div>
+        
+                <div>
+                    <form action="" method="post">
+    
+                        <div class="item-form">
+                            <label class="label" for="id_username">Usuario:</label>
+                            <input type="text" name="username" autofocus autocapitalize="none" autocomplete="username" maxlength="150" required id="id_username">
+                        </div>
+                        
+                          
+                        <div class="item-form">
+                            <label class="label" for="id_password">Contraseña:</label>
+                            <input type="password" name="password" autocomplete="current-password" required id="id_password">
+                        </div>
+                        
+                        {% csrf_token %}
+    
+                    <div class="contenedor-boton">
+                        <button> SAVE </button>
+                    </div>
+        
+                    </form>
+                </div>  
+            </div>
+
+            <div class="item img-2">
+                <img class="imagen"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/800px-User_icon_2.svg.png" alt="Img">
+            </div>
+
+        </div>
+    </section>
+
+
+    
+    
+    {% endblock %}
+
+</body>
+</html>

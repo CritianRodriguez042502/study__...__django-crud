@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Signup </title>
+</head>
+
+
+<body>
+    
+    {% extends "navegacion.html"  %}
+
+    {% block content %}
+
+    <!-- En este caso toco poner el link de style.css y el normalize por debajo del extends -->
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'signup_style.css'%}">
+
+   
+    <section id="signup">
+
+        <div class="contenedor">
+
+            <div class="item">
+
+                <h1> Registro </h1>
+
+                <p class="respuesta">{{respuesta}}</p>
+
+                <div class="formulario">
+                    <div>
+                        <form action="/signup/"method="post">
+    
+                            <div class="contenedor-form">
+                                <label for="id_first_name">Nombre:</label>
+                                <input type="text" name="first_name" maxlength="20" required id="id_first_name"> 
+                            </div>
+                    
+                            <div class="contenedor-form">
+                                <label  for="id_last_name">Apellido:</label>
+                                <input type="text" name="last_name" maxlength="20" required id="id_last_name">
+                            </div>
+                    
+                            <div class="contenedor-form">
+                                <label  for="id_username">Nombre de usuario:</label>
+                                <input type="text" name="username" maxlength="15" required id="id_username">
+                            </div>
+                    
+                            <div class="contenedor-form">
+                                <label  for="id_email">Correo:</label>
+                                <input type="email" name="email" maxlength="254" required id="id_email"> 
+                            </div>
+                    
+                            <div class="contenedor-form">
+                                <label  for="id_password_1">Contraseña:</label>
+                                <input type="password" name="password_1" maxlength="30" required id="id_password_1">
+                            </div>
+                    
+                            <div class="contenedor-form">
+                                <label  for="id_password_2">Confirmar contraseña:</label>
+                                <input type="password" name="password_2" maxlength="30" required id="id_password_2">
+                            </div>
+                    
+                            {% csrf_token %}
+    
+                            <div class="contenedor-boton">
+                                <button> SAVE </button>
+                            </div>
+    
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item item-img">
+                <img src="https://static.vecteezy.com/system/resources/previews/009/418/799/non_2x/digital-marketing-3d-icon-illustration-for-your-website-user-interface-and-presentation-3d-render-illustration-free-png.png" alt="img">
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+    
+    {% endblock  %}
+
+</body>
+</html>

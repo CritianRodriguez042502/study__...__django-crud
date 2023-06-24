@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Task </title>
+</head>
+
+<body>
+
+  {% extends "navegacion.html"  %}
+
+  {% block content %}
+
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'task_style.css' %}">
+
+  
+  <section id="tasks">
+    <div class="contenedor">
+      <div class="carta">
+        <div class="card-body">
+  
+          {% for tarea in taks %}
+  
+          <form action="{% url 'task_delete' id=tarea.id %}" method="POST">
+            {% csrf_token %}
+  
+            <h1>
+              <i class="bi bi-chat-square-text-fill"></i>
+              <i class="bi bi-chat-square-text-fill"></i>
+              <i class="bi bi-chat-square-text-fill"></i>
+            </h1>
+
+            <h5>{{ tarea.title }}</h5>
+  
+            
+            <p class="tarea-{{ tarea.id }}">
+              {{ tarea.description }}
+            </p>
+  
+
+            <div class="contenedor-boton">
+              <button><i class="bi bi-trash3-fill"></i> Eliminar <i class="bi bi-trash3-fill"></i></button>
+            </div>
+            <span>{{ tarea.creation }}</span>
+  
+          </form>
+  
+          {% endfor %}
+  
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+
+  
+
+  
+
+  {% endblock%}
+  
+
+
+
+  
+</body>
+</html>
+        

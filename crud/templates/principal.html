@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Homepage </title>
+</head>
+
+<body>
+  
+  {% extends "navegacion.html" %}
+
+  {% block content  %}
+
+  <!-- En este caso toco poner el link de style.css y el normalize por debajo del extends -->
+        
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'principal_style.css'%}">
+
+
+  <section id="web">
+    <div class="contenedor">
+
+      <div class="item-1">
+        <h1> Web </h1>
+        <p>
+          Aquí en nuestro sitio, te ofrecemos una forma en la cual podras registrar tus tareas diarias de forma conveniente y eficiente. <br> Sabemos lo abrumador que puede ser mantenerse al tanto de todas las responsabilidades y compromisos, por eso hemos creado esta web sencilla para ti.
+        </p>
+      </div>
+
+      <div class="item-img">
+        <img src="https://cdn-icons-png.flaticon.com/512/2210/2210184.png" alt="Img">
+      </div>
+  
+    </div>
+  
+  </section>
+
+
+  {% endblock  %}
+
+</body>
+</html>
