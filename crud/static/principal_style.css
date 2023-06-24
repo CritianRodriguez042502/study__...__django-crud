@@ -11,10 +11,10 @@ section {
 }
 
 #web .contenedor h1 {
-    font-size: 38px;
+    font-size: 42px;
     font-weight: bold;
     color: rgb(105, 98, 202);
-    text-align: start;
+    text-align: center;
 }
 
 #web .contenedor p {
