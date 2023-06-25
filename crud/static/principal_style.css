@@ -10,14 +10,20 @@ section {
     align-items: center;
 }
 
-#web .contenedor h1 {
-    font-size: 42px;
+#web .contenedor .item-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#web .contenedor .item-1 h1 {
+    font-size: 50px;
     font-weight: bold;
     color: rgb(105, 98, 202);
     text-align: center;
 }
 
-#web .contenedor p {
+#web .contenedor .item-1 p {
     font-size: 23px;
 }
 
