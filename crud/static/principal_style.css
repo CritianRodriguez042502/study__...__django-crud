@@ -3,6 +3,10 @@ section {
     padding: 70px 17px;
   }
 
+#web {
+     text-align: center;
+}
+
 #web .contenedor {
     display: flex;
     flex-direction: column;
@@ -20,7 +24,6 @@ section {
     font-size: 50px;
     font-weight: bold;
     color: rgb(105, 98, 202);
-    text-align: center;
 }
 
 #web .contenedor .item-1 p {
